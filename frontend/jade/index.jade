@@ -1,0 +1,52 @@
+extends includes/layout
+
+block content
+
+	div.row
+
+		div.col.size4
+			div.mod.box(style="min-height:230px;")
+				div.content
+					div.content-inner
+						div.textcontent-wrapper
+							div.textcontent
+
+								h1 Frontend - 
+									span #{site.name} </br>
+									span #{site.description}
+
+
+		div.col.size4
+			div.mod.box(style="min-height:230px;")
+				div.content
+					div.bHead
+						h2 Eksempelsider
+
+					div.content-inner
+						ul.link-list
+							li
+								a(href="tpl-frontpage.html") Frontpage
+					div.bFoot
+		// .col
+
+		div.col.size4
+			div.mod.box(style="min-height:230px;")
+				div.content
+					div.bHead
+						h2 Skabeloner
+
+					div.content-inner
+						ul.link-list
+							li
+								a(href="tpl-grid.html") Grid
+							li
+								a(href="tpl-form.html") Form
+							li
+								a(href="tpl-typography.html") Typography
+							li
+								a(href="tpl-popup.html", onClick="var href = this.href; this.href = document.location.href; window.open('tpl-popup.html', 'window name', 'width=650,height=740,resizable=false,statusbar=no,scrollbars=1'); return false;") Popup
+							li
+								a(href="tpl-sitemap.html") Sitemap
+
+		// .col
+	// .row

@@ -1,0 +1,74 @@
+/* Scaffold
+------------------------------------------------------ */
+
+/* Body reset */
+body  {
+        -webkit-text-size-adjust: none;
+
+        background:@bodyBackground;
+        font-family:@baseFontFamily;
+        font-size:@baseFontSize;
+        //line-height: @baseLineHeight;
+        color: @textColor;
+}
+
+/* Links */
+a     {
+        color: @linkColor;
+        text-decoration:none;
+        transition: color .3s ease-in-out;
+
+        &:hover {
+          color: @linkColorHover;
+          text-decoration:none;
+          transition: color 0.3s ease-in-out;
+        }
+        &:active {
+          color: @linkColorActive;
+          transition: color 0.3s ease-in-out;
+        }
+        &:link {
+          -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+        }
+        &:focus {
+          text-decoration:none;
+        }
+
+        img { 
+          border:none; 
+        }
+}
+
+::selection { 
+        background: @selectionColor; /* Safari */ 
+}
+::-moz-selection { 
+        background: @selectionColor; /* Firefox */ 
+}
+
+/* Utility classes
+------------------------------------------------------ */
+.sep    { margin:0 1px;}
+
+.hr     { 
+        height:1px; 
+        border-color:@hrColor;  
+        background:none; 
+        margin:1em 0; 
+        line-height:0;
+        
+        hr  { 
+          display: none; 
+        }
+      }
+.hr.solid   { border-top-width:1px; border-style:solid; }
+
+.left     { float:left; }
+.right    { float:right; }
+.hide     { display:none; }
+.show     { display:block; }
+.noborder   {   border:none; }
+.invisible  { visibility: hidden; }
+
+img.right   { float:right; margin:20px 0 20px 20px;}
+img.left  { float:left; margin:20px 20px 20px 0;}

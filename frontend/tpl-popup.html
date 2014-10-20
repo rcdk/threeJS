@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7 msie">
+-->
+<!--if IE 7<html class="no-js lt-ie9 lt-ie8 msie">
+-->
+<!--if IE 8<html class="no-js lt-ie9 msie">
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>tpl-popup</title>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements-->
+    <!--if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    
+    -->
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen,projection">
+    <!-- Scripts-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/min/jquery.plugins.js"></script>
+    <script src="../js/danfoss.func.js"></script>
+    <!--script(src="../js/TrackballControls.js")-->
+    <!--script(src="../js/earth.js")-->
+    <!--Three plugins-->
+    <script src="../js/three-plugins/three.min.js"></script>
+    <script src="../js/three-plugins/FlyControls.js"></script>
+    <script src="../js/three-plugins/CopyShader.js"></script>
+    <script src="../js/three-plugins/FilmShader.js"></script>
+    <script src="../js/three-plugins/EffectComposer.js"></script>
+    <script src="../js/three-plugins/ShaderPass.js"></script>
+    <script src="../js/three-plugins/MaskPass.js"></script>
+    <script src="../js/three-plugins/RenderPass.js"></script>
+    <script src="../js/three-plugins/FilmPass.js"></script>
+    <script src="../js/three-plugins/OrbitControls.js"></script>
+    <script src="../js/three-plugins/Detector.js"></script>
+    <script src="../js/three-plugins/lensflare.js"></script>
+    <script src="../js/three-plugins/tween.min.js"></script>
+    <!-- Night and Day test-->
+    <!--script(src="../js/three-plugins/vertexShader.js", id="vertexShader", type="x-shader/x-fragment")-->
+    <!--script(src="../js/three-plugins/fragmentShader.js", id="fragmentShader", type="x-shader/x-vertex")-->
+    <!-- Fav and touch icons-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  </head>
+  <body id="popup">
+    <div id="header">
+      <div class="row">
+        <div class="col size16 center">
+          <p>My header</p>
+        </div>
+      </div>
+      <!-- #header-->
+    </div>
+    <div id="pagewrap" class="fluid">
+      <div id="page">
+        <div id="content">
+          <div class="mod">
+            <div class="content">
+              <div class="content-inner">
+                <div class="textcontent-wrapper">
+                  <div class="textcontent">
+                    <h1>Headline h1: <span>text inside span ÅÄÖ åäö ÅÆØ åæø</span></h1>
+                    <p class="intro">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat.
+                    </p>
+                    <hr>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h2>Headline h2: <span>text inside span</span></h2>
+                    <p><a href="#">Link</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                    <ul>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>consectetur adipisicing elit sed do eiusmod</li>
+                      <li>tempor incididunt ut labore</li>
+                      <li>et dolore magna aliqua</li>
+                      <li>Ut enim ad minim veniam, quis nostrud</li>
+                    </ul>
+                    <h3>Headline h3: <span>text inside span</span></h3><del>Lorem ipsum dolor sit amet</del>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                    officia deserunt mollit anim id est laborum.
+                    <div class="hr dashed">
+                      <hr>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <ol>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>consectetur adipisicing elit sed do eiusmod</li>
+                      <li>tempor incididunt ut labore</li>
+                      <li>et dolore magna aliqua</li>
+                      <li>Ut enim ad minim veniam, quis nostrud</li>
+                    </ol>
+                    <div class="hr dooted">
+                      <hr>
+                    </div>
+                    <h4>This is a H4 headline</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                      <a href="#" title="This is a link">This is a link</a>
+                    </p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Lorem ipsum</th>
+                          <th>consectetur</th>
+                          <th>adipisicing</th>
+                          <th>eiusmod</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd">
+                          <td>Dolore magna aliqua</td>
+                          <td>Adipisicing</td>
+                          <td>Tempor</td>
+                          <td>15.06.2011</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Dolore magna aliqua</td>
+                          <td>Adipisicing</td>
+                          <td>Tempor</td>
+                          <td>15.06.2011</td>
+                        </tr>
+                        <tr class="odd">
+                          <td>Dolore magna aliqua</td>
+                          <td>Adipisicing</td>
+                          <td>Tempor</td>
+                          <td>15.06.2011</td>
+                        </tr>
+                        <tr class="even">
+                          <td>Dolore magna aliqua</td>
+                          <td>Adipisicing</td>
+                          <td>Tempor</td>
+                          <td>15.06.2011</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p><em>Emphasized text</em><br><strong>Strong text</strong><br>
+                      <dfn>Definition term</dfn><br><code>Computer code text</code><br><samp>Sample computer code text</samp><br><kbd>Keyboard text</kbd><br>
+                      <var>Variable</var><br>
+                      <cite>Citation</cite>
+                    </p>
+                    <h5>This is a H5 headline</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <ul class="link-list">
+                      <li><a href="#">Class aptent taciti sociosqu.</a></li>
+                      <li><a href="#">Class aptent taciti sociosqu ad litora.</a></li>
+                      <li><a href="#">Class aptent taciti ad litora torquent.</a></li>
+                    </ul>
+                    <hr>
+                    <div class="btnrow"><a href="#" class="btn right"><span class="bInner"><span class="arrow">Luk</span></span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #content-->
+      </div>
+      <!-- #page-->
+    </div>
+    <!-- #pagewrap-->
+    <div id="footer"></div>
+    <!-- #footer-->
+  </body>
+</html>

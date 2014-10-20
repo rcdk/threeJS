@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7 msie">
+-->
+<!--if IE 7<html class="no-js lt-ie9 lt-ie8 msie">
+-->
+<!--if IE 8<html class="no-js lt-ie9 msie">
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>tpl-form</title>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements-->
+    <!--if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    
+    -->
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen,projection">
+    <!-- Scripts-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/min/jquery.plugins.js"></script>
+    <script src="../js/danfoss.func.js"></script>
+    <!--script(src="../js/TrackballControls.js")-->
+    <!--script(src="../js/earth.js")-->
+    <!--Three plugins-->
+    <script src="../js/three-plugins/three.min.js"></script>
+    <script src="../js/three-plugins/FlyControls.js"></script>
+    <script src="../js/three-plugins/CopyShader.js"></script>
+    <script src="../js/three-plugins/FilmShader.js"></script>
+    <script src="../js/three-plugins/EffectComposer.js"></script>
+    <script src="../js/three-plugins/ShaderPass.js"></script>
+    <script src="../js/three-plugins/MaskPass.js"></script>
+    <script src="../js/three-plugins/RenderPass.js"></script>
+    <script src="../js/three-plugins/FilmPass.js"></script>
+    <script src="../js/three-plugins/OrbitControls.js"></script>
+    <script src="../js/three-plugins/Detector.js"></script>
+    <script src="../js/three-plugins/lensflare.js"></script>
+    <script src="../js/three-plugins/tween.min.js"></script>
+    <!-- Night and Day test-->
+    <!--script(src="../js/three-plugins/vertexShader.js", id="vertexShader", type="x-shader/x-fragment")-->
+    <!--script(src="../js/three-plugins/fragmentShader.js", id="fragmentShader", type="x-shader/x-vertex")-->
+    <!-- Fav and touch icons-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  </head>
+  <body>
+    <div id="header">
+      <div class="row">
+        <div class="col size16 center">
+          <p>My header</p>
+        </div>
+      </div>
+      <!-- #header-->
+    </div>
+    <div id="pagewrap" class="fluid">
+      <div id="page">
+        <div id="content">
+          <div class="row">
+            <div class="col size16">
+              <div class="mod box">
+                <div class="content">
+                  <div class="content-inner">
+                    <div class="textcontent-wrapper">
+                      <div class="textcontent">
+                        <h1>forms</h1>
+                        <form action="http://www.foo.com/" method="get">
+                          <input type="hidden" name="hidden" value="hidden">
+                          <h2>Example of success message</h2>
+                          <div class="msg success">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+                              erat adipiscing egestas.
+                            </p>
+                            <ul>
+                              <li>Success 1</li>
+                              <li>Success 2</li>
+                            </ul>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+                              erat adipiscing egestas.
+                            </p>
+                          </div>
+                          <h2>Example of information message</h2>
+                          <div class="msg info">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+                              erat adipiscing egestas.
+                            </p>
+                            <ul>
+                              <li>Success 1</li>
+                              <li>Success 2</li>
+                            </ul>
+                          </div>
+                          <h2>Example of notice message</h2>
+                          <div class="msg note">
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+                              erat adipiscing egestas.
+                            </p>
+                            <ul>
+                              <li>Success 1</li>
+                              <li>Success 2</li>
+                            </ul>
+                          </div>
+                          <h2>Example of error message:</h2>
+                          <div class="msg error">
+                            <ul>
+                              <li>Error 1</li>
+                              <li>Error 2</li>
+                              <li>Error 3</li>
+                              <li>Error 4</li>
+                              <li>Error 5</li>
+                              <li>Error 6</li>
+                            </ul>
+                          </div>
+                          <h2>Examples of sizes:</h2>
+                          <div class="fr">
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <input type="text" name="name" value="size-auto" size="50" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-wide">
+                              <label>Auto:</label><br>
+                              <input type="text" name="name" value="size-wide" size="50" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Large:</label><br>
+                              <input type="text" name="name" value="size-l" size="30" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <input type="text" name="name" value="size-m" size="15" class="text">
+                            </div>
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <input type="text" name="name" value="size-m" size="15" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <input type="text" name="name" value="size-s" size="7" class="text">
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <input type="text" name="name" value="size-s" size="7" class="text">
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <input type="text" name="name" value="size-s" size="7" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-xs">
+                              <label>xs:</label><br>
+                              <input type="text" name="name" value="" size="2" maxlength="2" class="text">
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xs:</label><br>
+                              <input type="text" name="name" value="" size="2" maxlength="2" class="text">
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xs:</label><br>
+                              <input type="text" name="name" value="" size="2" maxlength="2" class="text">
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xs:</label><br>
+                              <input type="text" name="name" value="" size="2" maxlength="2" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <input type="text" name="name" value="" size="5" class="text">
+                            </div>
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <input type="text" name="name" value="" size="10" class="text">
+                            </div>
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <input type="text" name="name" value="" size="20" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-wide">
+                              <label>Wide:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2 (Lorem ipsum dolor sit amet, consectetuer adipiscing elit.)</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Large:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <select size="5" multiple="multiple">
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                                <option value="value_3">Value 3</option>
+                                <option value="value_4">Value 4</option>
+                                <option value="value_5" selected="selected">Value 5</option>
+                                <option value="value_6">Value 6</option>
+                                <option value="value_7">Value 7</option>
+                                <option value="value_8">Value 8</option>
+                                <option value="value_9">Value 9</option>
+                                <option value="value_10">Value 10</option>
+                              </select>
+                            </div>
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <select size="5" multiple="multiple" disabled="disabled">
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                                <option value="value_3">Value 3</option>
+                                <option value="value_4">Value 4</option>
+                                <option value="value_5" selected="selected">Value 5</option>
+                                <option value="value_6">Value 6</option>
+                                <option value="value_7">Value 7</option>
+                                <option value="value_8">Value 8</option>
+                                <option value="value_9">Value 9</option>
+                                <option value="value_10">Value 10</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-xs">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>Small:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                            <div class="fu size-auto">
+                              <label>Auto:</label><br>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2 (Lorem ipsum dolor sit amet, consectetuer adipiscing elit.)</option>
+                              </select>
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="fr">
+                            <div class="fu size-m">
+                              <label class="size-m">Label medium:</label>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-s">
+                              <label class="size-s">Label small:</label>
+                              <select>
+                                <option value="value_1">Value 1</option>
+                                <option value="value_2">Value 2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu">
+                              <label class="checkbox"></label>
+                              <input type="checkbox" name="name" value=""> Value 1<br>
+                              <label class="checkbox"></label>
+                              <input type="checkbox" name="name" value=""> Value 2<br>
+                              <label class="checkbox"></label>
+                              <input type="checkbox" name="name" value=""> Value 3
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu">
+                              <label class="radio"> Radio:</label>
+                              <input type="radio" name="name" value="yes" checked="checked"> Yes
+                              <input type="radio" name="name" value="no"> No
+                            </div>
+                          </div>
+                          <hr>
+                          <div class="fr">
+                            <div class="fu size-wide">
+                              <label>Wide:</label><br>
+                              <textarea name="name" cols="50" rows="5">Textarea large...</textarea>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l error">
+                              <label>Large:</label><br>
+                              <textarea name="name" cols="30" rows="5">Textarea large...</textarea>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <textarea name="name" cols="15" rows="5">Textarea medium...</textarea>
+                            </div>
+                            <div class="fu size-m">
+                              <label>Medium:</label><br>
+                              <textarea name="name" cols="15" rows="5">Textarea medium...</textarea>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                            <div class="fu size-s">
+                              <label>Small:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-xs">
+                              <label>xSmall:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xSmall:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xSmall:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                            <div class="fu size-xs">
+                              <label>xSmall:</label><br>
+                              <textarea name="name" cols="7" rows="5">Textarea small...</textarea>
+                            </div>
+                          </div>
+                          <div class="btnrow"><a href="#" class="back">Cancel</a>
+                            <button type="submit" class="btn"><span>Submit</span></button>
+                          </div>
+                          <hr>
+                          <h2>Example of specials:</h2>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Password:</label><br>
+                              <input type="password" name="name" value="password" size="30" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Disabled:</label><br>
+                              <input type="text" name="name" value="value" size="30" disabled="disabled" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Readonly:</label><br>
+                              <input type="text" name="name" value="value" size="30" readonly="readonly" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Calendar:<strong class="req">*</strong></label><br>
+                              <input type="text" name="name" value="" size="30" class="text cal">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l error">
+                              <label>Fielderror:<strong class="req">*</strong></label><br>
+                              <input type="text" name="name" value="" size="30" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Hint:<strong class="req">*</strong></label><br><span title="Du får en ordrebekræftelse via mail" class="hint">
+                                <input type="text" name="email" value="" size="30" class="text"></span>
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <div class="fu size-l">
+                              <label>Label<sub>sub </sub><sup>sup</sup></label><br>
+                              <input type="text" name="name" value="" size="30" class="text">
+                            </div>
+                          </div>
+                          <div class="fr">
+                            <label class="input-top">A very very very very very long label across 3 inputs:</label><br>
+                            <div class="fu size-s">
+                              <input type="text" name="name" value="" size="7" class="text">
+                            </div>
+                            <div class="fu size-s">
+                              <input type="text" name="name" value="" size="7" class="text">
+                            </div>
+                            <div class="fu size-s">
+                              <input type="text" name="name" value="" size="7" class="text">
+                            </div>
+                          </div>
+                          <hr>
+                          <fieldset>
+                            <div class="fu size-l">
+                              <label>First name:<strong class="req">*</strong></label><br>
+                              <input type="text" name="name" value="" size="30" class="text">
+                            </div>
+                            <div class="fu size-l error">
+                              <label>Family name:</label><br>
+                              <input type="text" name="surename" value="" size="30" class="text">
+                            </div>
+                            <div class="fu size-l">
+                              <label>Address:</label><br>
+                              <input type="text" name="address" value="" size="30" class="text">
+                            </div>
+                            <div class="fu size-l">
+                              <label>Address:</label><br>
+                              <input type="text" name="address" value="" size="30" class="text">
+                            </div>
+                            <div class="fr">
+                              <div class="fu size-s zipcode">
+                                <label>Zip:</label><br>
+                                <input type="text" name="zip" value="" size="7" class="text">
+                              </div>
+                              <div class="fu size-m city">
+                                <label>City:</label><br>
+                                <input type="text" name="city" value="" size="15" class="text">
+                              </div>
+                            </div>
+                            <div class="fr">
+                              <div class="fu size-m">
+                                <label>Phone:</label><br>
+                                <input type="text" name="phone" value="" size="15" class="text">
+                              </div>
+                              <div class="fu size-m">
+                                <label>Fax:</label><br>
+                                <input type="text" name="fax" value="" size="15" class="text">
+                              </div>
+                            </div>
+                            <div class="fu size-l">
+                              <label>Email:</label><br>
+                              <input type="text" name="name" value="" size="30" class="text">
+                              <p>some text in p inside fu</p>
+                            </div>
+                            <div class="btnrow size-l"><a href="#" class="back">Cancel</a>
+                              <button type="submit" class="btn right"><span>Send</span></button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .col-->
+          </div>
+          <!-- .row-->
+        </div>
+        <!-- #content-->
+      </div>
+      <!-- #page-->
+    </div>
+    <!-- #pagewrap-->
+    <div id="footer"></div>
+    <!-- #footer-->
+  </body>
+</html>

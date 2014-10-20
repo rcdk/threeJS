@@ -1,0 +1,38 @@
+@media print {
+	body { width:100% !important; margin:0 !important; padding:0 !important; line-height:1.4; letter-spacing:0.2pt; color: #000; background: none; font-size: 10pt; }
+	
+	/* Headlines */
+	h1 { font-size:18px; font-weight:normal; }
+	h2 { font-size:14px; font-weight:normal; }
+	h3 {font-size:1em}
+	h4 {font-size:.8em;}
+	h5 {font-size:.8em;}
+	h6 {font-size:.8em;}
+	
+	/* Images */
+	img { margin: 0.2em .5em .5em 0; }
+	a img { border: none; }
+	img.right 				{ float:right; margin:20px 0 20px 20px;}
+	img.left 				{ float:left; margin:20px 20px 20px 0;}
+
+	/* Lists */
+	.list { margin:0; padding:0; }
+	.list li { margin:0; padding:0; list-style:none; border-bottom:1px solid #000;}
+	.list ul li { border:none;}
+
+	/* Links */
+	a:link, a:visited { background: transparent; font-weight: 700; text-decoration: none;color:#333; }
+	a:link[href^="http://"]:after, a[href^="http://"]:visited:after { content: " (" attr(href) ") "; font-size: 90%; }
+	a[href^="http://"] {color:#000; }
+	
+	/* Table */
+	table { margin: 1px; text-align:left; }
+	th { border-bottom: 1px solid #333;  font-weight: bold; }
+	td { border-bottom: 1px solid #333; }
+	th,td { padding: 4px 10px 4px 0; }
+	tr {page-break-inside: avoid;} 
+	
+	/*hide various parts from the site*/
+
+	.row:after 	{	content:"."; clear:both; display:block; height:0; visibility:hidden;}
+}

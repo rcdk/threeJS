@@ -1,0 +1,85 @@
+block vars 
+	- var pageTitle = 'Index - ' + site.name
+	- var bodyClass
+	- var bodyId
+doctype html
+//if lt IE 7
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7 msie">
+//if IE 7
+	<html class="no-js lt-ie9 lt-ie8 msie">
+//if IE 8
+	<html class="no-js lt-ie9 msie">
+//[if gt IE 8]><!
+html(class='no-js')
+	//<![endif]
+	
+	head
+		meta(charset="utf-8")
+		
+		meta(name="description", content="")
+		meta(name="author", content="")
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(name="apple-mobile-web-app-status-bar-style", content="black")
+		meta(name="apple-mobile-web-app-capable", content="yes")
+
+		title #{pageTitle}
+
+		// HTML5 shim, for IE6-8 support of HTML5 elements
+		//if lt IE 9
+			script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+
+
+		// Stylesheet
+		link(rel="stylesheet", href="../css/screen.css", type="text/css", media="screen,projection")
+
+		// Scripts
+		
+
+		script(src="../js/jquery.js")
+		script(src="../js/min/jquery.plugins.js")
+		script(src="../js/#{site.script}")
+		
+		//script(src="../js/TrackballControls.js")
+		//script(src="../js/earth.js")
+
+		//Three plugins
+
+		script(src="../js/three-plugins/three.min.js")
+		script(src="../js/three-plugins/FlyControls.js")
+		script(src="../js/three-plugins/CopyShader.js")
+		script(src="../js/three-plugins/FilmShader.js")
+		script(src="../js/three-plugins/EffectComposer.js")
+		script(src="../js/three-plugins/ShaderPass.js")
+		script(src="../js/three-plugins/MaskPass.js")
+		script(src="../js/three-plugins/RenderPass.js")
+		script(src="../js/three-plugins/FilmPass.js")
+		script(src="../js/three-plugins/OrbitControls.js")
+		script(src="../js/three-plugins/Detector.js")
+		script(src="../js/three-plugins/lensflare.js")
+		script(src="../js/three-plugins/tween.min.js")
+
+		
+		// Night and Day test
+		//script(src="../js/three-plugins/vertexShader.js", id="vertexShader", type="x-shader/x-fragment")
+		//script(src="../js/three-plugins/fragmentShader.js", id="fragmentShader", type="x-shader/x-vertex")
+
+		// Fav and touch icons
+		link(rel="shortcut icon", href="/favicon.ico")
+		link(rel="apple-touch-icon-precomposed", href="/apple-touch-icon-precomposed.png")
+
+	body(class=bodyClass, id=bodyId)
+
+		include header
+
+		div#pagewrap.fluid
+			div#page
+				div#content
+
+					block content
+
+				// #content
+			// #page
+		// #pagewrap
+
+		include footer

@@ -1,0 +1,182 @@
+extends includes/layout
+
+block append vars
+	- var pageTitle = 'tpl-grid'
+
+block grid
+	div.row
+		div.col.siz12
+			div.pad12
+	// .row
+
+	- var siz12 =12
+	- for (var i=1; i<=siz12; i++)
+		- if(siz12-i != 0)
+			div.row
+				div.col(class="size"+(siz12-i))
+					div.pad=siz12-i
+				div.col(class="size"+i)
+					div.pad=i
+			// .row
+
+	div.row
+		- var size4 = 3
+		- while(size4--)
+			div.col.size4
+				div.pad 4
+	// .row
+
+	div.row
+		- var size2 = 6
+		- while(size2--)
+			div.col.size2
+				div.pad 2
+	// .row
+
+	div.row
+		- var size1 = 12
+		- while(size1--)
+			div.col.size1
+				div.pad 1
+	// .row
+
+
+block content
+
+	div.debug
+		h2 fixed .size 
+			span X
+
+		block grid
+
+		br
+
+		h2 Nested rows
+
+		div.row
+			div.col.size4
+				div.row
+					div.col.size6
+						div.pad Module <br> Mod
+					div.col.size6
+						div.pad Module<br>Mod
+			div.col.size8
+				div.pad Module<br>Mod
+
+		// .row
+
+		hr
+
+		div.row
+			div.col.size6
+				div.row
+					div.col.size10
+						div.row
+							div.col.size2
+								div.pad Module <br> Mod
+							div.col.size2
+								div.pad Module <br> Mod
+							div.col.size2
+								div.pad Module <br> Mod
+							div.col.size2
+								div.pad Module <br> Mod
+							div.col.size2
+								div.pad Module <br> Mod
+
+					div.col.size2
+						div.pad Module<br>Mod
+			div.col.size4
+				div.pad Module<br>Mod
+			div.col.size2
+				div.pad Module<br>Mod
+
+		// .row
+
+		hr
+	
+	div.debug.fluid
+	
+		h2 fluid-grid .size 
+			span X
+
+		block grid
+
+		hr
+
+		h2 Fluid Nested rows
+
+		p 
+			| Nesting with fluid grids is a bit different: the number of nested columns should not match the parent's number of columns. 
+			| Instead, each level of nested columns are reset because each row takes up 100% of the parent column.
+
+		br
+
+		div.row
+			div.col.size6
+				div.row
+					div.col.size6
+						div.pad Module<br>Mod
+					div.col.size6
+						div.pad Module<br>Mod
+			div.col.size6
+				div.pad Module<br>Mod
+		// .row
+
+		hr
+
+		div.row
+			div.col.size4
+				div.row
+					div.col.size8
+						div.row
+							div.col.size6
+								div.pad Module<br>Mod
+							div.col.size6
+								div.pad Module<br>Mod
+					div.col.size4
+						div.pad Module<br>Mod
+			div.col.size4
+				div.pad Module<br>Mod
+			div.col.size4
+				div.pad Module<br>Mod
+		// .row
+				
+		hr
+
+		h2 offset-grid .offset
+			span X
+
+		div.row
+			div.col.size8
+				div.pad size8
+			div.col.size2.offset2
+				div.pad size2
+		// .row
+
+		div.row
+			div.col.size3
+				div.pad size3
+			div.col.size3.offset2
+				div.pad size3
+			div.col.size2.offset2
+				div.pad size2
+		// .row
+
+		hr
+
+		h2 center-grid
+
+		div.row
+			div.col.size2.center
+				div.pad size2
+		// .row
+		
+		div.row
+			div.col.size4.center
+				div.pad size4
+		// .row
+
+		div.row
+			div.col.size6.center
+				div.pad size6
+		// .row

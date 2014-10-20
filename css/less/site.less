@@ -1,0 +1,31 @@
+/* Fontface
+------------------------------------------------------ */
+
+/* Page
+------------------------------------------------------ */
+#pagewrap						{	background:#F3F3F1; min-height:500px;}
+#page 							{	width:@siteWidth;  .center-block() }
+.content-main-wrap 				{ 	margin-top:0;}
+
+/* popup page*/
+#popup #pagewrap 				{ 	padding:0;}
+#popup #page 					{ 	width:100%;}
+#popup .mod 					{ 	background:#fff; padding:10px 20px; margin:0;}
+
+/* Modules */
+.mod {min-height: 150px;}
+.mod.blue {background:#0076ff; }
+.mod.red {background:#ff0006;}
+.mod.green {background:#3ad854;}
+.mod.yellow {background:#ffde00;}
+
+
+/* Content
+------------------------------------------------------ */
+
+
+/* Earth test  */
+
+.mod.earth {position: relative;}
+.mod.earth .overlay {transition: all 2s ease; position: absolute; top: 40%; left: 50%; width: 450px; height: 150px; background: rgba(0,0,0,0.5); color: #fff;}
+.mod.earth .overlay p {font-size: 35px; text-align: center; margin-top: 100px;}

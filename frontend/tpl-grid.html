@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--if lt IE 7<html class="no-js lt-ie9 lt-ie8 lt-ie7 msie">
+-->
+<!--if IE 7<html class="no-js lt-ie9 lt-ie8 msie">
+-->
+<!--if IE 8<html class="no-js lt-ie9 msie">
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>tpl-grid</title>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements-->
+    <!--if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    
+    -->
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="../css/screen.css" type="text/css" media="screen,projection">
+    <!-- Scripts-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/min/jquery.plugins.js"></script>
+    <script src="../js/danfoss.func.js"></script>
+    <!--script(src="../js/TrackballControls.js")-->
+    <!--script(src="../js/earth.js")-->
+    <!--Three plugins-->
+    <script src="../js/three-plugins/three.min.js"></script>
+    <script src="../js/three-plugins/FlyControls.js"></script>
+    <script src="../js/three-plugins/CopyShader.js"></script>
+    <script src="../js/three-plugins/FilmShader.js"></script>
+    <script src="../js/three-plugins/EffectComposer.js"></script>
+    <script src="../js/three-plugins/ShaderPass.js"></script>
+    <script src="../js/three-plugins/MaskPass.js"></script>
+    <script src="../js/three-plugins/RenderPass.js"></script>
+    <script src="../js/three-plugins/FilmPass.js"></script>
+    <script src="../js/three-plugins/OrbitControls.js"></script>
+    <script src="../js/three-plugins/Detector.js"></script>
+    <script src="../js/three-plugins/lensflare.js"></script>
+    <script src="../js/three-plugins/tween.min.js"></script>
+    <!-- Night and Day test-->
+    <!--script(src="../js/three-plugins/vertexShader.js", id="vertexShader", type="x-shader/x-fragment")-->
+    <!--script(src="../js/three-plugins/fragmentShader.js", id="fragmentShader", type="x-shader/x-vertex")-->
+    <!-- Fav and touch icons-->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+  </head>
+  <body>
+    <div id="header">
+      <div class="row">
+        <div class="col size16 center">
+          <p>My header</p>
+        </div>
+      </div>
+      <!-- #header-->
+    </div>
+    <div id="pagewrap" class="fluid">
+      <div id="page">
+        <div id="content">
+          <div class="debug">
+            <h2>fixed .size <span>X</span></h2>
+            <div class="row">
+              <div class="col siz12">
+                <div class="pad12"></div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size11">
+                <div class="pad">11</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size10">
+                <div class="pad">10</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size9">
+                <div class="pad">9</div>
+              </div>
+              <div class="col size3">
+                <div class="pad">3</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size8">
+                <div class="pad">8</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size7">
+                <div class="pad">7</div>
+              </div>
+              <div class="col size5">
+                <div class="pad">5</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size6">
+                <div class="pad">6</div>
+              </div>
+              <div class="col size6">
+                <div class="pad">6</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size5">
+                <div class="pad">5</div>
+              </div>
+              <div class="col size7">
+                <div class="pad">7</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size8">
+                <div class="pad">8</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size3">
+                <div class="pad">3</div>
+              </div>
+              <div class="col size9">
+                <div class="pad">9</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size10">
+                <div class="pad">10</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size11">
+                <div class="pad">11</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <br>
+            <h2>Nested rows</h2>
+            <div class="row">
+              <div class="col size4">
+                <div class="row">
+                  <div class="col size6">
+                    <div class="pad">Module <br> Mod</div>
+                  </div>
+                  <div class="col size6">
+                    <div class="pad">Module<br>Mod</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col size8">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <hr>
+            <div class="row">
+              <div class="col size6">
+                <div class="row">
+                  <div class="col size10">
+                    <div class="row">
+                      <div class="col size2">
+                        <div class="pad">Module <br> Mod</div>
+                      </div>
+                      <div class="col size2">
+                        <div class="pad">Module <br> Mod</div>
+                      </div>
+                      <div class="col size2">
+                        <div class="pad">Module <br> Mod</div>
+                      </div>
+                      <div class="col size2">
+                        <div class="pad">Module <br> Mod</div>
+                      </div>
+                      <div class="col size2">
+                        <div class="pad">Module <br> Mod</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col size2">
+                    <div class="pad">Module<br>Mod</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col size4">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <hr>
+          </div>
+          <div class="debug fluid">
+            <h2>fluid-grid .size <span>X</span></h2>
+            <div class="row">
+              <div class="col siz12">
+                <div class="pad12"></div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size11">
+                <div class="pad">11</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size10">
+                <div class="pad">10</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size9">
+                <div class="pad">9</div>
+              </div>
+              <div class="col size3">
+                <div class="pad">3</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size8">
+                <div class="pad">8</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size7">
+                <div class="pad">7</div>
+              </div>
+              <div class="col size5">
+                <div class="pad">5</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size6">
+                <div class="pad">6</div>
+              </div>
+              <div class="col size6">
+                <div class="pad">6</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size5">
+                <div class="pad">5</div>
+              </div>
+              <div class="col size7">
+                <div class="pad">7</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size8">
+                <div class="pad">8</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size3">
+                <div class="pad">3</div>
+              </div>
+              <div class="col size9">
+                <div class="pad">9</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size10">
+                <div class="pad">10</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size11">
+                <div class="pad">11</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">4</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+              <div class="col size2">
+                <div class="pad">2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+              <div class="col size1">
+                <div class="pad">1</div>
+              </div>
+            </div>
+            <!-- .row-->
+            
+            <hr>
+            <h2>Fluid Nested rows</h2>
+            <p>
+               
+              Nesting with fluid grids is a bit different: the number of nested columns should not match the parent's number of columns. 
+              Instead, each level of nested columns are reset because each row takes up 100% of the parent column.
+            </p><br>
+            <div class="row">
+              <div class="col size6">
+                <div class="row">
+                  <div class="col size6">
+                    <div class="pad">Module<br>Mod</div>
+                  </div>
+                  <div class="col size6">
+                    <div class="pad">Module<br>Mod</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col size6">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <hr>
+            <div class="row">
+              <div class="col size4">
+                <div class="row">
+                  <div class="col size8">
+                    <div class="row">
+                      <div class="col size6">
+                        <div class="pad">Module<br>Mod</div>
+                      </div>
+                      <div class="col size6">
+                        <div class="pad">Module<br>Mod</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col size4">
+                    <div class="pad">Module<br>Mod</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col size4">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+              <div class="col size4">
+                <div class="pad">Module<br>Mod</div>
+              </div>
+            </div>
+            <!-- .row
+            -->
+            <hr>
+            <h2>offset-grid .offset<span>X</span></h2>
+            <div class="row">
+              <div class="col size8">
+                <div class="pad">size8</div>
+              </div>
+              <div class="col size2 offset2">
+                <div class="pad">size2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size3">
+                <div class="pad">size3</div>
+              </div>
+              <div class="col size3 offset2">
+                <div class="pad">size3</div>
+              </div>
+              <div class="col size2 offset2">
+                <div class="pad">size2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <hr>
+            <h2>center-grid</h2>
+            <div class="row">
+              <div class="col size2 center">
+                <div class="pad">size2</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size4 center">
+                <div class="pad">size4</div>
+              </div>
+            </div>
+            <!-- .row-->
+            <div class="row">
+              <div class="col size6 center">
+                <div class="pad">size6</div>
+              </div>
+            </div>
+            <!-- .row-->
+          </div>
+        </div>
+        <!-- #content-->
+      </div>
+      <!-- #page-->
+    </div>
+    <!-- #pagewrap-->
+    <div id="footer"></div>
+    <!-- #footer-->
+  </body>
+</html>

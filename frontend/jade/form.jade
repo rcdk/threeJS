@@ -1,0 +1,465 @@
+extends includes/layout
+
+block append vars
+	- var pageTitle = 'tpl-form'
+
+block content
+
+	div.row
+
+		div.col.size16
+			div.mod.box
+				div.content
+					div.content-inner
+						div.textcontent-wrapper
+							div.textcontent
+
+								h1 forms
+											
+								form(action="http://www.foo.com/", method="get")
+											
+									input(type="hidden", name="hidden", value="hidden")
+
+									h2 Example of success message
+									div.msg.success
+										p
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+											| erat adipiscing egestas.
+
+										ul
+											li Success 1
+											li Success 2
+
+										p
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+											| erat adipiscing egestas.
+
+
+									h2 Example of information message
+									div.msg.info
+										p
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+											| erat adipiscing egestas.
+											
+										ul
+											li Success 1
+											li Success 2
+		
+									
+									h2 Example of notice message
+									div.msg.note
+										p
+											| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam vitae justo hendrerit
+											| erat adipiscing egestas.
+
+										ul
+											li Success 1
+											li Success 2
+		
+									
+									h2 Example of error message:
+									div.msg.error
+										ul
+											li Error 1
+											li Error 2
+											li Error 3
+											li Error 4
+											li Error 5
+											li Error 6
+									
+									h2 Examples of sizes:
+
+									div.fr
+										div.fu.size-auto
+											label Auto:
+											br
+											input.text(type='text', name='name', value='size-auto', size='50')
+
+									div.fr
+										div.fu.size-wide
+											label Auto:
+											br
+											input.text(type='text', name='name', value='size-wide', size='50')
+
+									div.fr
+										div.fu.size-l
+											label Large:
+											br
+											input.text(type='text', name='name', value='size-l', size='30')
+
+									div.fr
+										div.fu.size-m
+											label Medium:
+											br
+											input.text(type='text', name='name', value='size-m', size='15')
+										div.fu.size-m
+											label Medium:
+											br
+											input.text(type='text', name='name', value='size-m', size='15')
+
+									div.fr
+										div.fu.size-s
+											label Small:
+											br
+											input.text(type='text', name='name', value='size-s', size='7')
+										div.fu.size-s
+											label Small:
+											br
+											input.text(type='text', name='name', value='size-s', size='7')
+										div.fu.size-s
+											label Small:
+											br
+											input.text(type='text', name='name', value='size-s', size='7')
+
+									div.fr
+										div.fu.size-xs
+											label xs:
+											br
+											input.text(type='text', name='name', value='', size='2', maxlength='2')
+										div.fu.size-xs
+											label xs:
+											br
+											input.text(type='text', name='name', value='', size='2', maxlength='2')
+										div.fu.size-xs
+											label xs:
+											br
+											input.text(type='text', name='name', value='', size='2', maxlength='2')
+										div.fu.size-xs
+											label xs:
+											br
+											input.text(type='text', name='name', value='', size='2', maxlength='2')
+									div.fr
+										div.fu.size-auto
+											label Auto:
+											br
+											input.text(type='text', name='name', value='', size='5')
+										div.fu.size-auto
+											label Auto:
+											br
+											input.text(type='text', name='name', value='', size='10')
+										div.fu.size-auto
+											label Auto:
+											br
+											input.text(type='text', name='name', value='', size='20')
+
+
+									div.fr
+										div.fu.size-wide
+											label Wide:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2 (Lorem ipsum dolor sit amet, consectetuer adipiscing elit.)
+									div.fr
+										div.fu.size-l
+											label Large:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+									
+									div.fr
+										div.fu.size-m
+											label Medium:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-m
+											label Medium:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+
+
+									div.fr
+										div.fu.size-m
+											label Medium:
+											br
+											select(size='5', multiple='multiple')
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+												option(value='value_3') Value 3
+												option(value='value_4') Value 4
+												option(value='value_5', selected='selected') Value 5
+												option(value='value_6') Value 6
+												option(value='value_7') Value 7
+												option(value='value_8') Value 8
+												option(value='value_9') Value 9
+												option(value='value_10') Value 10
+										div.fu.size-m
+											label Medium:
+											br
+											select(size='5', multiple='multiple', disabled='disabled')
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+												option(value='value_3') Value 3
+												option(value='value_4') Value 4
+												option(value='value_5', selected='selected') Value 5
+												option(value='value_6') Value 6
+												option(value='value_7') Value 7
+												option(value='value_8') Value 8
+												option(value='value_9') Value 9
+												option(value='value_10') Value 10
+
+
+									div.fr
+										div.fu.size-s
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-s
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-s
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+
+									div.fr
+										div.fu.size-xs
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-xs
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-xs
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-xs
+											label Small:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+									div.fr
+										div.fu.size-auto
+											label Auto:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+										div.fu.size-auto
+											label Auto:
+											br
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2 (Lorem ipsum dolor sit amet, consectetuer adipiscing elit.)
+
+
+									hr
+
+									div.fr
+										div.fu.size-m
+											label.size-m Label medium:
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+									div.fr
+										div.fu.size-s
+											label.size-s Label small:
+											select
+												option(value='value_1') Value 1
+												option(value='value_2') Value 2
+									div.fr
+										.fu
+											label.checkbox
+											input(type='checkbox', name='name', value='') 
+											|  Value 1
+											br
+											label.checkbox
+											input(type='checkbox', name='name', value='')
+											|  Value 2
+											br
+											label.checkbox
+											input(type='checkbox', name='name', value='')
+											|  Value 3
+									div.fr
+										.fu
+											label.radio  Radio:
+											input(type='radio', name='name', value='yes', checked='checked')
+											|  Yes
+											input(type='radio', name='name', value='no')
+											|  No
+
+
+									hr
+
+									div.fr
+										div.fu.size-wide
+											label Wide:
+											br
+											textarea(name='name', cols='50', rows='5') Textarea large...
+									div.fr
+										div.fu.size-l.error
+											label Large:
+											br
+											textarea(name='name', cols='30', rows='5') Textarea large...
+									div.fr
+										div.fu.size-m
+											label Medium:
+											br
+											textarea(name='name', cols='15', rows='5') Textarea medium...
+										div.fu.size-m
+											label Medium:
+											br
+											textarea(name='name', cols='15', rows='5') Textarea medium...
+									div.fr
+										div.fu.size-s
+											label Small:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+										div.fu.size-s
+											label Small:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+										div.fu.size-s
+											label Small:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+									div.fr
+										div.fu.size-xs
+											label xSmall:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+										div.fu.size-xs
+											label xSmall:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+										div.fu.size-xs
+											label xSmall:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+										div.fu.size-xs
+											label xSmall:
+											br
+											textarea(name='name', cols='7', rows='5') Textarea small...
+									div.btnrow
+										a.back(href='#') Cancel
+										button.btn(type='submit')
+											span Submit
+
+
+									hr
+
+									h2 Example of specials:
+
+									div.fr
+										div.fu.size-l
+											label Password:
+											br
+											input.text(type='password', name='name', value='password', size='30')
+									div.fr
+										div.fu.size-l
+											label Disabled:
+											br
+											input.text(type='text', name='name', value='value', size='30', disabled='disabled')
+									div.fr
+											div.fu.size-l
+												label Readonly:
+												br
+												input.text(type='text', name='name', value='value', size='30', readonly='readonly')
+									div.fr
+										div.fu.size-l
+											label Calendar:
+												strong.req *
+											br
+											input.text.cal(type='text', name='name', value='', size='30')
+									div.fr
+										div.fu.size-l.error
+											label Fielderror:
+												strong.req *
+											br
+											input.text(type='text', name='name', value='', size='30')
+									div.fr
+										div.fu.size-l
+											label Hint:
+												strong.req *
+											br
+											span.hint(title='Du får en ordrebekræftelse via mail')
+												input.text(type='text', name='email', value='', size='30')
+									div.fr
+										div.fu.size-l
+											label Label
+												sub sub 
+												sup sup
+											br
+											input.text(type='text', name='name', value='', size='30')
+									div.fr
+										label.input-top A very very very very very long label across 3 inputs:
+										br
+										div.fu.size-s
+											input.text(type='text', name='name', value='', size='7')
+										div.fu.size-s
+											input.text(type='text', name='name', value='', size='7')
+										div.fu.size-s
+											input.text(type='text', name='name', value='', size='7')
+
+									
+									hr
+
+									fieldset
+										div.fu.size-l
+											label First name:
+												strong.req *
+											br
+											input.text(type='text', name='name', value='', size='30')
+										div.fu.size-l.error
+											label Family name:
+											br
+											input.text(type='text', name='surename', value='', size='30')
+										div.fu.size-l
+											label Address:
+											br
+											input.text(type='text', name='address', value='', size='30')
+										div.fu.size-l
+											label Address:
+											br
+											input.text(type='text', name='address', value='', size='30')
+										div.fr
+											div.fu.size-s.zipcode
+												label Zip:
+												br
+												input.text(type='text', name='zip', value='', size='7')
+											div.fu.size-m.city
+												label City:
+												br
+												input.text(type='text', name='city', value='', size='15')
+										div.fr
+											div.fu.size-m
+												label Phone:
+												br
+												input.text(type='text', name='phone', value='', size='15')
+											div.fu.size-m
+												label Fax:
+												br
+												input.text(type='text', name='fax', value='', size='15')
+										div.fu.size-l
+											label Email:
+											br
+											input.text(type='text', name='name', value='', size='30')
+											p some text in p inside fu
+										div.btnrow.size-l
+											a.back(href='#') Cancel
+											button.btn.right(type='submit')
+												span Send
+
+		// .col
+	// .row

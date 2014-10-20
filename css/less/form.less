@@ -1,0 +1,169 @@
+.fu                 {
+					  margin:0 0 10px; 
+					  clear:both; 
+					  min-height:0;
+					}
+.fr .fu             {
+					  margin:0 10px 0 0;
+					  float:left;
+					  display:inline;
+					  clear:none;
+					}
+.fr                 {  
+					  clear:both; 
+					  margin-bottom: 4px;
+					  min-height: 0;
+					  display:block;
+
+					  .clearfix();
+					}
+* html .fr          { height:1px; }
+
+select, 
+.select, 
+input	              {
+					  margin:0; 
+					  padding:2px; 
+					}
+input.text,
+input[type="text"],
+select,
+.select, 
+textarea            { 
+					  border:1px solid @inputBorder;
+
+					  .border-radius(@inputBorderRadius);
+   
+					  color:@gray;
+					  padding:2px 3px;
+					  margin:4px 0;
+}
+input.text,
+input[type="text"]
+					{ padding:3px; }
+
+
+.size-wide input.text 	{ width:99%; }
+.size-l input.text  	{ width:326px; }
+.size-m input.text		{ width:154px; }
+.size-s input.text		{ width:94px; }
+.size-xs input.text 	{ width:65px; }
+.size-auto input.text 	{ width:auto; }
+
+.size-wide select	{ width:99%;}
+.size-l select	{ width:334px; }
+.size-m select	{ width:160px; }
+.size-s select	{ width:102px; }
+.size-xs select	{ width:72px; }
+
+.size-l textarea		{ width:326px; height:100px; }
+.size-m textarea		{ width:152px; height:80px; }
+.size-s textarea		{ width:94px; height:50px; }
+.size-xs textarea		{ width:65px; height:30px; }
+
+label.size-l			{ float:left; width:310px; }
+label.size-m			{ float:left; width:145px; }
+label.size-s			{ float:left; width:90px; }
+
+.city input.text {width:214px;}
+.zipcode input.text {width:94px;}
+.streetnr input.text {width:58px}
+.floor input.text {width:54px}
+
+.size-l.error input.text,
+.size-l.error textarea  	{ width:306px; }
+.size-m.error input.text,
+.size-m.error textarea		{ width:132px; }
+.size-s.error input.text,
+.size-s.error textarea		{ width:74px; }
+.size-xs.error input.text,
+.size-xs.error textarea 	{ width:45px; }
+
+.fu input[type="radio"],
+.fu input[type="checkbox"],
+.fu label { vertical-align:middle;}
+
+/*if there's a help icon, make the input field 16px smaller */
+span.hint { background:transparent url('@{imgPath}icon-hint.png') no-repeat right 3px; padding-right:20px; cursor:help;}
+span.hint:hover { background-position:right -31px;}
+.size-l span.hint input.text { width:296px;}
+.size-m span.hint input.text { width:130px; }
+.size-s span.hint input.text { width:77px; }
+.size-xs span.hint input.text { width:50px; }
+.Zipcode span.hint input.text {width:78px;}
+
+div.fu {display:inline; float:left; clear:both;}
+div.btnrow {clear:both; margin:5px 0; .clearfix(); }
+div.btnrow.size-l { width:336px;}
+div.btnrow.size-m { width:162px;}
+div.btnrow.size-s { width:104px;}
+div.btnrow p { margin:0;}
+div.fr {clear:both;}
+div.fr div.fu {margin-right:14px; clear:none; display:inline; margin-bottom:0;}
+.req{padding-left:2px; font-size:1em; line-height:0;}
+.btn-next { float:right; }
+.btn-back { float:left; padding:10px 0;}
+
+input.text:focus,
+textarea:focus { 
+			border-color:#09C; 
+			box-shadow:0 0 3px #39C;
+		  }
+
+/*append .statusError on .fu:*/
+div.fu.error input.text, 
+div.fu.error textarea {
+			background:url('@{imgPath}icon-error.png') no-repeat right 50%; 
+			border-color:darken(spin(@errorBackground, -10), 50%); 
+			padding-right:20px; 
+			box-shadow:0 0 2px darken(spin(@errorBackground, -10), 50%);
+		  }
+div.fu.error label {color:darken(spin(@errorBackground, -10), 50%);}
+
+/* required fields */
+.req					{ font-weight:bold; color:darken(spin(@errorBackground, -10), 50%); }
+
+/*
+=Notice bars
+------------------------------------------------------ */
+div.msg { 
+			margin:1em 0;
+			padding:1px 10px; 
+			border-radius:@inputBorderRadius;
+		}
+div.msg.success { 
+			color:darken(spin(@successBackground, -10), 50%);
+			background:@successBackground; 
+			border:1px solid darken(spin(@successBackground, -10), 10%);
+		}
+div.msg.info { 
+			color:darken(spin(@infoBackground, -10), 50%);
+			background:@infoBackground; 
+			border:1px solid darken(spin(@infoBackground, -10), 10%);
+		}
+div.msg.note { 
+			color:darken(spin(@warningBackground, -10), 50%);
+			background:@warningBackground; 
+			border:1px solid darken(spin(@warningBackground, -10), 10%);
+		}
+div.msg.error, 
+div.errors { 
+			color:darken(spin(@errorBackground, -10), 50%);
+			background:@errorBackground; 
+			border: 1px solid darken(spin(@errorBackground, -10), 10%);
+		}
+/* MVC ajax validation error style */
+div.validation-summary-errors { 
+			margin:1em 0;
+			padding:1px 10px;
+			border-radius:4px;
+			color:darken(spin(@errorBackground, -10), 50%);
+			background:@errorBackground;
+			border: 1px solid #F7C7C9;
+			font-weight:normal;
+		}
+div.success p, div.info p, div.note p {margin:1em 0;}
+
+
+/*.net adds br elements after each label. add .inline-checkboxes to your .fu to fix it*/
+.inline-checkboxes br {display:none;}

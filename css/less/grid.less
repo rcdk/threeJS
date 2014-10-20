@@ -1,0 +1,75 @@
+/* grids
+------------------------------------------------------ */
+@col :	@siteWidth / @gridColumns;
+
+.row:after,.clear:after{
+	clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;
+	content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+.row,.clear{*zoom:1;}
+.col{ float:left; min-height:1px; _height:1px; /*prevent empty columns from collapsing */ }
+
+/* fixed-width grid with gutters */
+// will be called as long the index is above 0
+.grid-fixed (@index) when (@index > 0) {
+
+	.size@{index} {
+		// your resulting css
+		width:@col * @index;
+	}
+	// next iteration
+	.grid-fixed(@index - 1);
+}
+// end the loop when index is 0
+.grid-fixed (0) {}
+
+// "call" the grid-fixed the first time with highest value
+.grid-fixed (@gridColumns);
+
+
+/* offset grid with gutters */
+.grid-offset (@index) when (@index > 0) {
+	.offset@{index} {
+		margin-left:(100% / (@gridColumns / @index));
+	}
+	.grid-offset(@index - 1);
+}
+.grid-offset (0) {}
+.grid-offset (@gridColumns);
+
+
+/* fluid-width grid with gutters */
+.grid-fluid (@index) when (@index > 0) {
+	.fluid .size@{index} {
+		width:(100% / (@gridColumns / @index));
+	}
+	.grid-fluid(@index - 1);
+}
+.grid-fluid (0) {}
+.grid-fluid (@gridColumns);
+
+/* fluid offset grid with gutters */
+.grid-fluid-offset (@index) when (@index > 0) {
+	.fluid .offset@{index} {
+		margin-left:(100% / (@gridColumns / @index));
+	}
+	.grid-fluid-offset(@index - 1);
+}
+.grid-fluid-offset (0) {}
+.grid-fluid-offset (@gridColumns);
+
+.row {
+	margin:0;
+	.row {
+		margin:0;
+		.row {
+			margin:0;
+		}
+	}
+}
+.mod,.pad {margin:@gutter;}
+.col.center { margin:0 auto; float:none; display:table;} 
+
+/*debug*/
+.debug .col .pad, .debug .col .mod {background:#fff; padding:10px; box-shadow:0 0 1px #ddd;}
+.debug .row { background:#eee; margin-bottom:5px;}
